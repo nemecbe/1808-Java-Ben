@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register An Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="register">Update</h1>
+    <h4 id="enter">Please Update Any of the Following Information if Necessary:</h4>
+    <form action="update" method="POST">
+        Employee ID  :
+        <input type="number" class="inputs" id="id" name="id"/>
+        <br>
+        Username     :
+        <input type="text" class="inputs" id="username" name="username"/>
+        <br>
+        Password     :
+        <input type="password" class="inputs" id="password" name="password"/>
+        <br>
+        First Name   :
+        <input type="text" class="inputs" id="fName" name="fname"/>
+        <br>
+        Last Name    :
+        <input type="text" class="inputs" id="lName" name="lname"/>
+        <br>
+        Position     :
+        <input type="text" class="inputs" id="position" name="position"/>
+        <br>
+        Address      :
+        <input type="text" class="inputs" id="address" name="address"/>
+        <br>
+        Supervisor ID:
+        <input type="number" class="inputs" id="supId" name="supid"/>
+        <br>
+        Department   :
+        <input type="text" class="inputs" id="dept" name="dept"/>
+        <br>
+        Birthday     :
+        <input type="date" class="inputs" id="birthday" name="bday"/>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="register" id="submit"/>
+    </form>
+</body>
+</html>
