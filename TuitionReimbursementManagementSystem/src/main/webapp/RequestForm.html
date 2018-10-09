@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Request For Reimbursement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h1 align="center">Request Form</h1>
+    <h4>Please check and fill out the following information in order to apply:</h4>
+    <form class="form-group" action="request" method="POST">
+        Event Type:
+        <br>
+        <select id="eventType" class="inputs" name="eventType">
+            <option id="cert" value="certification">Certification</option>
+            <option id="tech" value="technical">Technical Training</option>
+            <option id="uni" value="university">University Course</option>
+            <option id="prep" value="preparation">Certification Preparation Class</option>
+            <option id="seminar" value="seminar">Seminar</option>
+            <option id="other" value="other">Other</option>
+        </select>
+        <br>
+        Event Cost (Dollars):
+        <br>
+        <input id="cost" class="inputs" type="number" min="1" step="0.01" name="cost" />
+        <br>
+        Event Start Date and Time:
+        <br>
+        <input id="startDate" class="inputs" type="date" name="startDate" />
+        <br>
+        <input id="startTime" class="inputs" type="time" name="startTime" />
+        <!-- datetime? -->
+        <br>
+        Event Location:
+        <br>
+        <input id="location" class="inputs" type="text" name="location" />
+        <br>
+        Event Description:
+        <br>
+        <textarea id="description" class="inputs" placeholder="Enter description here" name="description"></textarea>
+        <br>
+        Justification:
+        <br>
+        <textarea id="justification" class="inputs" placeholder="Why this event applies to your position" name="justification"></textarea>
+        <br>
+        Grading Format:
+        <br>
+        <select id="format" class="inputs" name="gradingFormat">
+            <option id="graded" value="graded">Graded</option>
+            <option id="pass" value="pass">Pass/Fail</option>
+            <option id="presentation" value="presentation">Presentation</option>
+        </select>
+        <br>
+        Grade Required:
+        <br>
+        <input id="gradeReq" class="inputs" type="text" placeholder="Enter Default if none" name="gradeReq"/>
+        <br>
+        Time Away From Work (Hours):
+        <br>
+        <input id="timeAway" class="inputs" type="number" min="1" name="time" />
+        <br>
+        Any Necessary File Attachments:
+        <br>
+        <input id="files" class="inputs" type="file" name="files" />
+        <br>
+        <br>
+        <br>
+        <input id="submit" class="request" type="submit" value="Submit Request" />
+        <a id="back" class="back" href="home" >Back</a>
+    </form>
+    <form id="edit" style="display:none">
+        Any Necessary File Attachments:
+        <br>
+        <input id="files" class="secondary" type="file" />
+        <br>
+        Grade Received:
+        <br>
+        <input id="gradeRec" class="secondary" type="text" />
+        <br>
+        <br>
+        <br>
+        <input id="submit" class="request" type="submit" value="Submit Request" />
+        <button id="back" class="back" href="home">Back</button>
+    </form>
+</body>
+</html>
