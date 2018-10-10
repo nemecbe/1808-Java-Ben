@@ -48,6 +48,7 @@ public class GeneralRequestServiceTest {
 	public void tearDown() throws Exception {
 	}
 
+	/*
 	@Test
 	public void testGetRequest() {
 		assertEquals("Testing getting a request", req,
@@ -96,5 +97,5 @@ public class GeneralRequestServiceTest {
 		assertEquals("Testing updating a request", anotherReq.getAmount(), 
 				reqDao.getById("" + anotherReq.getRequestId()));
 	}
-
+*/
 }
