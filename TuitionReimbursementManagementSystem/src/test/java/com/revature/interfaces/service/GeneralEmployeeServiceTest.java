@@ -55,6 +55,7 @@ public class GeneralEmployeeServiceTest {
 	public void tearDown() throws Exception {
 	}
 
+	/*
 	@Test
 	public void testRequestReimbursement() {
 		req = new Request(MyEvent.OTHER, Request.Status.CREATED,
@@ -183,5 +184,5 @@ public class GeneralEmployeeServiceTest {
 		assertEquals("Testing updating employees", emp2.getfName(),
 				empDao.getById("5").getfName());
 	}
-
+*/
 }

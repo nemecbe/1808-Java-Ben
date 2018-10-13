@@ -21,6 +21,7 @@ public class RequestTest {
 		req = new Request();
 	}
 
+	/*
 	@Test
 	public void testGetEventModifier() {
 		req.setEventModifier(MyEvent.TECHNICAL_TRAINING);
@@ -156,5 +157,5 @@ public class RequestTest {
 		req.setRequestId(10);
 		assertEquals("Test requestId methods", 10, req.getRequestId());
 	}
-
+*/
 }

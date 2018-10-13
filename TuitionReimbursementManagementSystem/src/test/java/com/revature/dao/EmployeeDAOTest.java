@@ -30,7 +30,7 @@ public class EmployeeDAOTest {
 	public void testEmployeeDAO() {
 		fail("Not yet implemented");
 	}
-
+/*
 	@Test
 	public void testGetById() {
 		fail("Not yet implemented");
@@ -60,5 +60,5 @@ public class EmployeeDAOTest {
 	public void testDelete() {
 		fail("Not yet implemented");
 	}
-
+*/
 }
